@@ -7,7 +7,7 @@ font-family: 'Russo One', sans-serif;
 }
 
 .header {
-    background-color: #FFA4ED;
+    background-color: #fd33d5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,9 +27,10 @@ transform: scale(1.3);
 }
 .main_logo {
     object-fit: cover;
-    height: 40px;
+    height: 60px;
     transition: all 0.1s;
     cursor: pointer;
+    filter: invert(1);
 }
 
 
@@ -44,11 +45,12 @@ transform: scale(1.3);
    
    display: inline;
    padding: 0 20px;
+   
 }
 
 .nav__link {
     font-size: 20px;
-    color: #eb121a;
+    color: aliceblue;
     text-decoration: none;
 }
 
@@ -62,8 +64,69 @@ transform: scale(1.3);
     width: 100%;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .nav {
     width: 100%;
+}
+
+.gallery {
+    max-width: 100%;
+   max-height: 600px;
+    display: flex;
+    position: relative;
+    
+}
+.gallery_item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+aspect-ratio: 9/16;
+}
+
+.main {
+    margin: 0 auto;
+
+}
+
+.gallery__shop {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border: 0;
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: breath 1s infinite ease-in-out alternate;
+
+}
+
+@keyframes breath {
+    from {
+        transform: translate(-50%, 50%) scale(1)
+    }
+    to {
+        transform: translate(-50%, 50%) scale(1.1)
+    }
+}
+
+.gallery__shop img {
+    width: 32px;
+    height: 32px;
+    filter: invert(1);
+}
+
+div {
+    background-color: bisque;
+    width: 500px;
+    height: 500px;
+}
+.gallery_item {
+display: inline-block;
+   flex: 1;
 }
