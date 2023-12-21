@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-font-family: 'Russo One', sans-serif;
+    font-family: 'Russo One', sans-serif;
+
 }
 
 .header {
@@ -14,6 +15,7 @@ font-family: 'Russo One', sans-serif;
     height: 85px;
     width: 100%;
     padding: 5px 10%;
+
 }
 
 
@@ -115,7 +117,7 @@ aspect-ratio: 9/16;
 }
 
 .gallery_shop {
-    background-color: #fd33d5;
+    background-color: aliceblue;
     max-width: 100%;
     height: 600px;
     display: flex;
@@ -142,10 +144,15 @@ flex: 1;
     
 }
 
-.section {
+.container_lips {
     height: 500px;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: #edede9;
+}
+.container_neck {
+    height: 500px;
+    width: 100%;
+    background-color: #edede9;
 }
 .product_photos img {
     width: 200px;
@@ -154,12 +161,15 @@ flex: 1;
     aspect-ratio: 9/16;
     }
  .title_shop {
+font-family: 'Orbitron', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Russo One', sans-serif;
     position: absolute ;
     left: 50%;
     bottom: 75%;
     font-size: 32px;
     background-color: rgba(0, 0, 0, 0);
-    color: white;
+    color:#fd33d5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,3 +191,124 @@ flex: 1;
     .product_photos:hover {
         transform: scale(1.1);
     }
+
+    h2 {
+        font-size: 70px;
+    }
+
+    .circule_container {
+        font-size: 30px;
+        position: absolute;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 160px;
+        right: 20%;
+        top: 85%;
+        background-color: aliceblue ;
+        color: #fd33d5;
+        transform: translate(50%,-50%);
+        z-index: 100;
+        border-radius: 50%;
+        transform: rotate(10deg);
+    }
+    .circule__text {
+        width: 155px;
+        height: 155px;  
+        background-color: #fd33d5 ;
+        color: aliceblue;
+        border-radius: 50%;
+        border: solid pink;
+        transform: rotate(10deg);
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lips_photo {
+        display: flex;
+        position: absolute;
+        left: 100px;
+       margin-top: 40px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .neck_photo {
+        display: flex;
+        position: absolute;
+        right: 100px;
+       margin-top: 40px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .container_background {
+        max-width: 100%;
+        max-height: 500px;
+         display: flex;
+         position: relative;
+    }
+
+.background_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title_glow_lips_lips {
+    display: flex;
+    position: absolute ;
+    font-size: 32px;
+    color:black;
+    flex-direction: column;
+    left: 55%;
+    margin-top: 20px;
+    text-align: center;
+   justify-content: center;
+   align-items: center;
+
+}
+.title_aurora_dermal {
+    display: flex;
+    position: absolute ;
+    font-size: 32px;
+    color:black;
+    flex-direction: column;
+    right: 55%;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.button_glow_up_lips {
+ 
+    margin-top: 350px;
+    display: flex;
+    position: absolute;
+    border-radius: 980px;
+    padding: 20px 55px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.button_glow_up_lips:hover{
+    
+    background-color: #fd33d5;
+}
+.button_aurora_dermal:hover{
+    
+    background-color: #fd33d5;
+}
+
+.button_aurora_dermal {
+    margin-top: 350px;
+    display: flex;
+    position: absolute;
+    border-radius: 980px;
+    padding: 20px 55px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
