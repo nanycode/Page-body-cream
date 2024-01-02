@@ -515,6 +515,7 @@ font-family: 'Russo One', sans-serif;
     height: 200px;
     border-radius: 20px;
     margin-right: 10px;
+    object-fit: contain;
 }
 
 .line {
