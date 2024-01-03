@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
-
     margin: 0;
     padding: 0;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Russo One', sans-serif;
+}
 
+body {
+    font-family: 'Russo One', sans-serif;
+    overflow-x: hidden;
 }
 
 .header {
@@ -81,9 +82,10 @@ object-fit: cover;
 aspect-ratio: 9/16;
 }
 
-.main {
+.main_menu {
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
 }
 
 .gallery__button {
@@ -102,14 +104,7 @@ aspect-ratio: 9/16;
    cursor: pointer;
 }
 
-@keyframes breath {
-    from {
-        transform: translate(-50%, 50%) scale(1)
-    }
-    to {
-        transform: translate(-50%, 50%) scale(1.1)
-    }
-}
+
 
 .gallery__button img {
     width: 32px;
@@ -535,6 +530,7 @@ font-family: 'Russo One', sans-serif;
 
 .shop_img {
     font-size: 25px;
+    cursor: pointer;
 
 
 }
@@ -601,23 +597,37 @@ gap: 10px;
     
 }
 .sidebar_cart {
-    width: 360px;
+    width: 0;
+    padding: 0;
     top: 0;
     right: 0;
+    transform: translateX(100%);
     min-height: 100vh;
     color: black;
-    padding: 20px;
     border-left: 1px solid rgb(28, 28, 28);
     background-color: whitesmoke;
     box-shadow: -2px 0 49x hsl(0 4% 15% / 10%);
-    transition: 0.3s;
-   
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
 }
 
-.sidebar_cart.active {
-
-    right: 0;
+.sidebar_cart.open {
+    transform: translateX(0);
+    width: 400px;
+    padding: 20px;
 }
+
+.sidebar_cart.open .cart_content {
+    transform: translateX(0);
+}
+
+.cart_content {
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
 .cart_title {
     text-align: center;
     font-size: 1.5em;
@@ -629,7 +639,7 @@ gap: 10px;
 .cart_box {
 
     display: grid;
-    grid-template-columns: 32% 50% 18%;
+    grid-template-columns: 38% 52% 16%;
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
@@ -667,7 +677,7 @@ gap: 10px;
 
 .cart_remove {
 position: absolute;
-right: 0;
+right: 5;
     font-size: 24px;
     color: grey;
     cursor: pointer;
@@ -677,7 +687,7 @@ right: 0;
 display: flex;
 justify-content: flex-end;
 margin-top: 1.5rem;
-border-top: 1px solid gray;
+border-top: 2px solid black;
 }
 
 .total_title {
@@ -724,7 +734,14 @@ background: #eee;
 
 
 
-
+@keyframes breath {
+    from {
+        transform: translate(-50%, 50%) scale(1)
+    }
+    to {
+        transform: translate(-50%, 50%) scale(1.1)
+    }
+}
 
 
 @media screen and (min-width: 1800px) {
