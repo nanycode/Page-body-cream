@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./index.html" />
+    <link rel="stylesheet" href="./shop.html" />
+    <link rel="stylesheet" href="./skin.html" />
+    <link rel="stylesheet" href="./body.html" />
+    <link rel="stylesheet" href="./lips.html" />
+    <link rel="stylesheet" href="./hair.html" />
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#">SHOP</a></li>
+            <li><a class="nav__link" href="#">OUR COLLECTIONS</a></li>
+            <li>
+              <figure class="container_logo">
+                <img class="main_logo" src="./images/tinified/logo.png" alt="nany" onclick="recargarPagina()"/>
+              </figure>
+            </li>
+            <li><a class="nav__link" href="#">ABOUT US</a></li>
+            <li><a class="nav__link" href="#">LOCATION</a></li>
+          </ul>
+        </nav>
+
+      </header>
+      <div class="line"></div>
+      <div class="cart">
+        <div class="shopping_cart-items">
+            <div class="imagen">
+                <img src="imagen_producto1.jpg" alt="Producto 1">
+            </div>
+            <div class="descripcion">
+                <h3>Producto 1</h3>
+                <p>Descripción del producto 1.</p>
+            </div>
+            <div class="cantidad">
+                <button class="incrementar">+</button>
+                <span class="cantidad-numero">1</span>
+                <button class="decrementar">-</button>
+            </div>
+            <div class="precio">
+                <p>$19.99</p>
+            </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
