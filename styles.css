@@ -521,8 +521,22 @@ font-family: 'Russo One', sans-serif;
 
 .line {
     width: 100%;
-    background-color: black;
+    background-color: gray;
     height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+.shop_cart-icon {
+    
+    margin-left: auto;
+    text-align: center;
+}
+
+.shop_img {
+    font-size: 25px;
+
+
 }
 .shop_cart {
     width: 32px;
@@ -596,8 +610,13 @@ gap: 10px;
     border-left: 1px solid rgb(28, 28, 28);
     background-color: whitesmoke;
     box-shadow: -2px 0 49x hsl(0 4% 15% / 10%);
-    
+    transition: 0.3s;
    
+}
+
+.sidebar_cart.active {
+
+    right: 0;
 }
 .cart_title {
     text-align: center;
@@ -605,9 +624,6 @@ gap: 10px;
     font-weight: 500;
     margin-top: 2rem;
     
-}
-.close_cart{
-    width: 60px;
 }
 
 .cart_box {
@@ -650,7 +666,8 @@ gap: 10px;
 }
 
 .cart_remove {
-
+position: absolute;
+right: 0;
     font-size: 24px;
     color: grey;
     cursor: pointer;
@@ -691,14 +708,19 @@ background: #eee;
 
 #close_cart {
     position: absolute;
-    top: 145px;
-    right: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: gray;
     cursor: pointer;
+   top: 22%;
+   right: 0.8rem;
+
 }
-
-
+.close_icon {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+   
+}
 
 
 
