@@ -558,10 +558,18 @@ font-family: 'Russo One', sans-serif;
 }
 .product_card {
     border: 1px solid black;
+    transition: 0.4s;
     padding: 30px;
+    position: relative;
 
 }
 
+.product_card:hover {
+    
+    transform: scale(0.9);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+}
 .sidebar-menu {
     flex-basis: 15%;
     flex-shrink: 1;
@@ -585,6 +593,9 @@ gap: 10px;
     cursor: pointer;
 }
 
+.sidebar-menu__item:hover {
+    color: gray;
+}
 
 
 .shopping_cart-items{
