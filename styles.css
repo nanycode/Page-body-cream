@@ -547,6 +547,7 @@ font-family: 'Russo One', sans-serif;
 
 .shop_cart img {
     width: 100%;
+    cursor: pointer;
     height: 100%;
 }
 
